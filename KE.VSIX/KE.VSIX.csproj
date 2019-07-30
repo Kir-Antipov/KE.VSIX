@@ -12,7 +12,7 @@
     <PackageDescription>KE.VSIX - a set of useful tools for developing extensions for Visual Studio. 
     
 Don't use this project without prior modification!!!</PackageDescription>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <RepositoryUrl>https://github.com/Kir-Antipov/KE.VSIX</RepositoryUrl>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>

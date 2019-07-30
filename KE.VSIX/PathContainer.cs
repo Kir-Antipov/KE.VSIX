@@ -42,7 +42,7 @@ namespace KE.VSIX
             Path = Dir.Combine(_ExtensionsPath, PackageName);
             if (!Directory.Exists(Path))
                 Directory.CreateDirectory(Path);
-            DllLocation = new Uri(Package.Assembly.CodeBase, UriKind.Absolute).LocalPath;
+            DllLocation = Dir.GetDirectoryName(new Uri(Package.Assembly.CodeBase, UriKind.Absolute).LocalPath);
         }
         #endregion
 
