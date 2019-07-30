@@ -6,5 +6,7 @@ For greater ease of use, it is oriented for my personal needs, so I highly recom
 
 -------------
 
-[NuGet](https://www.nuget.org/packages/KE.VSIX/)<br>
-<sub>This link is just for me. Don't use this project without prior modification!</sub>
+ - `KE.VSIX`: [NuGet](https://www.nuget.org/packages/KE.VSIX/)
+ - `KE.VSIX.DotNetCompilerPlatform`: [NuGet](https://www.nuget.org/packages/KE.VSIX.DotNetCompilerPlatform/)
+ 
+<sub>These links are just for me. Don't use this project without prior modification!</sub>
