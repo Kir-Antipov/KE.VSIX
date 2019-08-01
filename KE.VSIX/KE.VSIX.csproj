@@ -21,6 +21,7 @@ Don't use this project without prior modification!!!</PackageDescription>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="15.9.28307" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading" Version="15.8.209" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Design" />
