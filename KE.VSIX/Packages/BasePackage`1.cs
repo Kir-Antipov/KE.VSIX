@@ -53,7 +53,7 @@ namespace KE.VSIX.Packages
                 typeof(TPackage).Assembly
                     .GetTypes()
                     .Where(x => x.Namespace == commandsNamespace)
-                    .Where(typeof(BaseCommand<>).IsAssignableFrom)
+                    .Where(BaseCommand.IsCommand)
                     .Select(type => (type, set: type.GetProperty("CommandSet"), id: type.GetProperty("CommandID")))
                     .OrderBy(x => (Guid)x.set.GetValue(null))
                     .ThenBy(x => (int)x.id.GetValue(null))

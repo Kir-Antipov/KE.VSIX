@@ -6,7 +6,7 @@ using Task = System.Threading.Tasks.Task;
 
 namespace KE.VSIX.Commands
 {
-    public abstract class BaseCommand<T> where T : BaseCommand<T>, new()
+    public abstract class BaseCommand<T> : BaseCommand where T : BaseCommand<T>, new()
     {
         #region Var
         public string Text
