@@ -48,6 +48,13 @@ namespace KE.VSIX
 
         #region Functions
         public string MapPath(string Path) => Dir.Combine(this.Path, Path);
+        public string MapDirectory(string Path)
+        {
+            string result = MapPath(Path);
+            if (!Directory.Exists(result))
+                Directory.CreateDirectory(result);
+            return result;
+        }
 
         public override string ToString() => Path;
         public override int GetHashCode() => DllLocation.GetHashCode();

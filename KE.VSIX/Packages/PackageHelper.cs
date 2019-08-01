@@ -8,7 +8,7 @@ using System.IO.Compression;
 using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
-namespace KE.VSIX
+namespace KE.VSIX.Packages
 {
     public static class PackageHelper
     {
@@ -30,6 +30,8 @@ namespace KE.VSIX
             {
                 if (Directory.Exists(container.Path))
                 {
+                    foreach (string x in Directory.EnumerateDirectories(container.Path, "*", SearchOption.AllDirectories))
+                        Directory.CreateDirectory(x.Replace(container.Path, wrongDir));
                     foreach (string x in Directory.EnumerateFiles(container.Path, "*", SearchOption.AllDirectories))
                         File.Copy(x, x.Replace(container.Path, wrongDir), true);
                     Directory.Delete(container.Path, true);
